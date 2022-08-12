@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>League of Legends - Riot Games Login Page VNW</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="login-area">
+        <figure class="logo">
+          <img src="assets/icons/logo.png" alt="Riot Games Logo" />
+        </figure>
+        <h1 class="title">Fazer Login</h1>
+        <form>
+          <div class="input-single">
+            <input
+              type="text"
+              id="username"
+              tabindex="0"
+              required
+              class="input-login username"
+              onchange="handleLoginIsAvailable()"
+            />
+            <label for="username" class="legend-input username">Nome de usuário</label>
+          </div>
+          <div class="input-single">
+            <input
+              type="password"
+              id="password"
+              required
+              class="input-login password"
+              onchange="handleLoginIsAvailable()"
+            />
+            <label for="password" class="legend-input password">Senha</label>
+          </div>
+        </form>
+        <div class="login-with">
+          <button class="button-media facebook">
+            <img src="assets/icons/facebook-icon.png" alt="logo facebook" />
+          </button>
+          <button class="button-media google">
+            <img src="assets/icons/google-icon.png" alt="logo google" />
+          </button>
+          <button class="button-media apple">
+            <img src="assets/icons/apple-icon.png" alt="logo apple" />
+          </button>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="keep-connected" checked />
+          <label for="keep-connected">Manter login</label>
+        </div>
+
+        <button type="submit" class="button-logIn" id="submit-button">
+          <img src="assets/icons/arrow-right.png" alt="" />
+        </button>
+        <p><a href="#">Não consegue iniciar a sessão?</a></p>
+        <p><a href="#">Criar conta</a></p>
+      </section>
+      <aside class="box-panel">
+        <img
+          src="assets/images/panel-form.png"
+          alt="Banner League of Legends"
+          class="banner"
+        />
+      </aside>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
